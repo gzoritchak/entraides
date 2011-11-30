@@ -24,17 +24,13 @@ public abstract class BasePage extends WebPage {
 
     /**
      * Insertion de toutes les css nécessaires.
-     * 960.css    : grid pour assurer des alignements constants,
-     * base.css   : remise au propre des styles par défaut,
-     * style.css : layout du site (header, colonnes, ...)
+     * bootstrap.css    : grid pour assurer des alignements constants,
      *
      * L'inclusion des styles par wicket permet de générer un numéro de version (checksum) qui, en paramétrant
      * la gestion des headers garantie une mise en cache à vie de la css dans le navigateur et supprime des requêtes.
      */
     @Override
     public void renderHead(IHeaderResponse response) {
-        response.renderCSSReference(new PackageResourceReference(BasePage.class, "960.css"));
-        response.renderCSSReference(new PackageResourceReference(BasePage.class, "base.css"));
-        response.renderCSSReference(new PackageResourceReference(BasePage.class, "style.css"));
+        response.renderCSSReference(new PackageResourceReference(BasePage.class, "bootstrap.css"));
     }
 }
