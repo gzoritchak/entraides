@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket-contrib.googlecode.com/files/wicket.xsd">
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="../../fwk/templating/bootstrap.css"/>
+</head>
+<body>
+
+<wicket:extend>
+    <div class="page-header">
+        <h1>Bravo, vous êtes inscrit! Complétez votre profil</h1>
+    </div>
+
+    <div class="row">
+        <div class="span12">
+            <form wicket:id="form">
+                <fieldset>
+                    <input wicket:id="localisation" class="xlarge" rel="popover"
+                           data-content="Votre localisation est importante pour pouvoir afficher les échanges proches de chez vous. Votre adresse n'est pas affichée de manière publique. "
+                           size="30" type="text" value="" data-original-title="localisation">
+
+                    <textarea class="xxlarge" wicket:id="bio" name="bio" rel="popover"
+                              data-content="Donnez quelques informations sur vous et les raisons qui vous incitent à échanger."
+                              rows="3" value="" data-original-title="bio"></textarea>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Centres d'intérêts</legend>
+                    <div class="clearfix ">
+                        <div class="input">
+                            <ul class="inputs-list">
+                                                        <span class="checkbox">
+                                <li><label><input type="checkbox" name="interests" value="Jardinage">
+                                    <span>Jardinage</span></label></li>
+                            </span>
+                            </ul>
+                            <span class="help-inline newline"></span>
+                            <span class="help-block newline"></span>
+                        </div>
+
+                    </div>
+
+                    <input class="xlarge" wicket:id="autres" size="200" type="text"
+                           rel="popover"
+                           data-content="Vous pouvez saisir de nouveaux centres d'intérêts (en les séparant par une virgule)"
+                           value="" data-original-title="Autres Centres d'intérêts">
+                </fieldset>
+                <div class="actions">
+                    <input type="submit" class="btn primary large"
+                           wicket:id="submit" wicket:message="value:submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</wicket:extend>
+</body>
+</html>

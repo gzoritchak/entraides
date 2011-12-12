@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket-contrib.googlecode.com/files/wicket.xsd">
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="../../fwk/templating/bootstrap.css"/>
+</head>
+<body>
+
+<wicket:extend>
+    <h1>Se connecter</h1>
+
+    <p>Utiliser vos identifiants pour vous connecter.</p>
+
+    <form wicket:id="form">
+        <input type="text" wicket:id="login"/>
+        <input type="text" wicket:id="password"/>
+        <input type="submit" class="btn primary" wicket:id="submit"/>
+    </form>
+
+</wicket:extend>
+</body>
+</html>

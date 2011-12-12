@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket-contrib.googlecode.com/files/wicket.xsd"
+      >
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="./fwk/templating/bootstrap.css"/>
+</head>
+<body>
+
+<!--
+Tout ce qui est en dehors de wicket:extend ne sera pas inclus dans la page. Ce sont les pages dont cette page hérite
+qui définiront ce qui se trouve avant (header, ...) et après (footer). Si l'on souhaite vérifier le rendu global dans
+ firefox sans démarrer le serveur, il est possible de copier tout le code html à tester.
+-->
+<wicket:extend>
+    <div class="hero-unit">
+        <h1>Entraides</h1>
+        <p>Parce que l'argent n'est pas toujours nécessaire pour bien vivre...</p>
+        <wicket:link>
+            <a href="user/creation/PageInscription.html" class="btn large primary">S'inscrire</a>
+        </wicket:link>
+    </div>
+
+</wicket:extend>
+</body>
+</html>

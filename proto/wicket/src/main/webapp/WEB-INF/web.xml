@@ -27,6 +27,6 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>org.entraides.web.guice.ConfigWww</listener-class>
+        <listener-class>org.entraides.web.fwk.guice.ConfigWww</listener-class>
     </listener>
 </web-app>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket-contrib.googlecode.com/files/wicket.xsd">
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="../../fwk/templating/bootstrap.css"/>
+</head>
+<body>
+
+<wicket:extend>
+    <div class="page-header">
+        <h1>Votre identité</h1>
+    </div>
+
+    <div class="row">
+        <div class="span12">
+            <form wicket:id="form">
+                <fieldset>
+                    <input type="text" wicket:id="email" class="disabled"/>
+                    <input type="text" wicket:id="login"/>
+                    <input type="password" wicket:id="pass1"/>
+                    <input type="password" wicket:id="pass2"/>
+                </fieldset>
+                <div class="actions">
+                    <input type="submit" class="btn primary large"
+                           wicket:id="submit" wicket:message="value:submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</wicket:extend>
+</body>
+</html>

@@ -1,8 +1,8 @@
 package org.entraides;
 
 import org.apache.wicket.util.tester.WicketTester;
-import org.entraides.web.wicket.ApplicationWicket;
-import org.entraides.web.HomePage;
+import org.entraides.web.ApplicationWicket;
+import org.entraides.web.PageAccueil;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,9 +23,9 @@ public class TestHomePage
 	public void homepageRendersSuccessfully()
 	{
 		//start and render the test page
-		tester.startPage(HomePage.class);
+		tester.startPage(PageAccueil.class);
 
 		//assert rendered page class
-		tester.assertRenderedPage(HomePage.class);
+		tester.assertRenderedPage(PageAccueil.class);
 	}
 }
